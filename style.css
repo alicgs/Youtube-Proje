@@ -6,13 +6,29 @@
 body{
   font-family: 'Roboto', sans-serif;
   background-color: #0f0f0f;
+  margin-left: 120px;
+}
+@media (max-width: 575px){
+.homepage{
+  margin-left: -150px;
+}
+.sidebar{
+  display: none;
+}
+.videos-card{
+  width: 500px;
+}
 }
 nav{
   width: 100%;
+  margin-left: -120px;
   max-height: 70px;
   padding: 0.5rem;
   box-shadow: 0 0 0.1rem rgb(210, 210, 210);
   background-color: #0f0f0f;
+  position: fixed;
+  top: 0; 
+  z-index: 2;
 }
 nav ul{
   margin-top: 5px;
@@ -173,9 +189,9 @@ svg{
   background-color: #222222 !important;
   border-radius: 30px;
 }
-  /*2.GRUP CSS*/
+  /*2.GRUP CSS SIDEBAR*/
 .sidebar {
-  width: 270px;
+  width: 230px;
   position: fixed;
   height: 100%;
   left: 0;
@@ -235,4 +251,16 @@ svg{
 } 
 .bg-none-external{
   background: none;
+}
+/*3.GRUP CSS ANASAYFA, VİDEOLAR*/
+.videos-container{
+  width: 2900px;
+  background-color: #0F86DA;
+}
+.homepage{
+  margin-top: 85px;
+}
+.videos-card{
+  background: none;
+  border: none;
 }
